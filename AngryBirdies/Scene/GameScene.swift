@@ -105,6 +105,7 @@ extension GameScene {
                 // CGPoints
                 let locationDelta = location - locationAfterScale
                 let newPosition = gameCamera.position + locationDelta
+                gameCamera.position = newPosition
                 
                 // Reset the scale so that if the user rescales it will be smooth
                 sender.scale = 1.0
