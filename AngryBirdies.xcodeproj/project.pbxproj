@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5BFF0EE258C026500FC5294 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFF0ED258C026500FC5294 /* GameCamera.swift */; };
 		A5DA0639258BF274006226F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA0638258BF274006226F7 /* AppDelegate.swift */; };
 		A5DA063B258BF274006226F7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5DA063A258BF274006226F7 /* GameScene.sks */; };
 		A5DA063F258BF274006226F7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA063E258BF274006226F7 /* GameScene.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5BFF0ED258C026500FC5294 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 		A5DA0635258BF274006226F7 /* AngryBirdies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirdies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DA0638258BF274006226F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5DA063A258BF274006226F7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5BFF0EC258C025200FC5294 /* Custom Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFF0ED258C026500FC5294 /* GameCamera.swift */,
+			);
+			path = "Custom Nodes";
+			sourceTree = "<group>";
+		};
 		A5DA062C258BF274006226F7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,8 @@
 		A5DA0637258BF274006226F7 /* AngryBirdies */ = {
 			isa = PBXGroup;
 			children = (
+				A5BFF0EC258C025200FC5294 /* Custom Nodes */,
+				A5DA0647258BF275006226F7 /* Info.plist */,
 				A5DA0660258BFC88006226F7 /* TileSets */,
 				A5DA065C258BFC11006226F7 /* UI */,
 				A5DA065B258BFC01006226F7 /* Scene */,
@@ -73,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				A5DA0638258BF274006226F7 /* AppDelegate.swift */,
-				A5DA0647258BF275006226F7 /* Info.plist */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -187,6 +198,7 @@
 			files = (
 				A5DA063F258BF274006226F7 /* GameScene.swift in Sources */,
 				A5DA0641258BF274006226F7 /* GameViewController.swift in Sources */,
+				A5BFF0EE258C026500FC5294 /* GameCamera.swift in Sources */,
 				A5DA0639258BF274006226F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -311,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -10,10 +10,12 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    let gameCamera = SKCameraNode()
+    let gameCamera = GameCamera()
+    var panRecognizer = UIPanGestureRecognizer()
     
     override func didMove(to view: SKView) {
         addCamera()
+        setupGestureRecognizer()
     }
     
     func addCamera() {
@@ -24,4 +26,23 @@ class GameScene: SKScene {
         camera = gameCamera
     }
     
+    func setupGestureRecognizer() {
+        guard let view = view else { return }
+        panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(pan))
+        view.addGestureRecognizer(panRecognizer)
+    }
+    
+}
+
+extension GameScene {
+    
+    /*
+     Allow the user to pan the screen in the game
+     */
+    @objc func pan(sender: UIPanGestureRecognizer) {
+        guard let view = view else { return }
+        let translation = sender.translation(in: view)
+        gameCamera.position = CGPoint(x: gameCamera.position.x - translation.x, y: gameCamera.position.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: view)
+    }
 }
