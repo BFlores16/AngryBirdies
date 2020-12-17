@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		A5DA0639258BF274006226F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA0638258BF274006226F7 /* AppDelegate.swift */; };
 		A5DA063B258BF274006226F7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5DA063A258BF274006226F7 /* GameScene.sks */; };
-		A5DA063D258BF274006226F7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5DA063C258BF274006226F7 /* Actions.sks */; };
 		A5DA063F258BF274006226F7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA063E258BF274006226F7 /* GameScene.swift */; };
 		A5DA0641258BF274006226F7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA0640258BF274006226F7 /* GameViewController.swift */; };
 		A5DA0644258BF274006226F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA0642258BF274006226F7 /* Main.storyboard */; };
 		A5DA0646258BF275006226F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DA0645258BF275006226F7 /* Assets.xcassets */; };
+		A5DA0656258BF622006226F7 /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5DA0655258BF622006226F7 /* BirdTileSet.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5DA0635258BF274006226F7 /* AngryBirdies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirdies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DA0638258BF274006226F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5DA063A258BF274006226F7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		A5DA063C258BF274006226F7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		A5DA063E258BF274006226F7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A5DA0640258BF274006226F7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A5DA0643258BF274006226F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5DA0645258BF275006226F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DA0647258BF275006226F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DA0655258BF622006226F7 /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,12 @@
 			children = (
 				A5DA0638258BF274006226F7 /* AppDelegate.swift */,
 				A5DA063A258BF274006226F7 /* GameScene.sks */,
-				A5DA063C258BF274006226F7 /* Actions.sks */,
 				A5DA063E258BF274006226F7 /* GameScene.swift */,
 				A5DA0640258BF274006226F7 /* GameViewController.swift */,
 				A5DA0642258BF274006226F7 /* Main.storyboard */,
 				A5DA0645258BF275006226F7 /* Assets.xcassets */,
 				A5DA0647258BF275006226F7 /* Info.plist */,
+				A5DA0655258BF622006226F7 /* BirdTileSet.sks */,
 			);
 			path = AngryBirdies;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DA0644258BF274006226F7 /* Main.storyboard in Resources */,
+				A5DA0656258BF622006226F7 /* BirdTileSet.sks in Resources */,
 				A5DA063B258BF274006226F7 /* GameScene.sks in Resources */,
 				A5DA0646258BF275006226F7 /* Assets.xcassets in Resources */,
-				A5DA063D258BF274006226F7 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
