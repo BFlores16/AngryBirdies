@@ -14,6 +14,7 @@
 		A5DA0644258BF274006226F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA0642258BF274006226F7 /* Main.storyboard */; };
 		A5DA0646258BF275006226F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DA0645258BF275006226F7 /* Assets.xcassets */; };
 		A5DA0656258BF622006226F7 /* BirdTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5DA0655258BF622006226F7 /* BirdTileSet.sks */; };
+		A5DA065E258BFC41006226F7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA065D258BFC41006226F7 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A5DA0645258BF275006226F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DA0647258BF275006226F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DA0655258BF622006226F7 /* BirdTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdTileSet.sks; sourceTree = "<group>"; };
+		A5DA065D258BFC41006226F7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,57 @@
 		A5DA0637258BF274006226F7 /* AngryBirdies */ = {
 			isa = PBXGroup;
 			children = (
-				A5DA0638258BF274006226F7 /* AppDelegate.swift */,
-				A5DA063A258BF274006226F7 /* GameScene.sks */,
-				A5DA063E258BF274006226F7 /* GameScene.swift */,
-				A5DA0640258BF274006226F7 /* GameViewController.swift */,
-				A5DA0642258BF274006226F7 /* Main.storyboard */,
-				A5DA0645258BF275006226F7 /* Assets.xcassets */,
-				A5DA0647258BF275006226F7 /* Info.plist */,
-				A5DA0655258BF622006226F7 /* BirdTileSet.sks */,
+				A5DA0660258BFC88006226F7 /* TileSets */,
+				A5DA065C258BFC11006226F7 /* UI */,
+				A5DA065B258BFC01006226F7 /* Scene */,
+				A5DA065A258BFBFA006226F7 /* ViewController */,
+				A5DA0659258BFBF4006226F7 /* Template */,
 			);
 			path = AngryBirdies;
+			sourceTree = "<group>";
+		};
+		A5DA0659258BFBF4006226F7 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				A5DA0638258BF274006226F7 /* AppDelegate.swift */,
+				A5DA0647258BF275006226F7 /* Info.plist */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		A5DA065A258BFBFA006226F7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5DA0640258BF274006226F7 /* GameViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A5DA065B258BFC01006226F7 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A5DA063A258BF274006226F7 /* GameScene.sks */,
+				A5DA063E258BF274006226F7 /* GameScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		A5DA065C258BFC11006226F7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5DA0642258BF274006226F7 /* Main.storyboard */,
+				A5DA0645258BF275006226F7 /* Assets.xcassets */,
+				A5DA065D258BFC41006226F7 /* Launch Screen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A5DA0660258BFC88006226F7 /* TileSets */ = {
+			isa = PBXGroup;
+			children = (
+				A5DA0655258BF622006226F7 /* BirdTileSet.sks */,
+			);
+			name = TileSets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +173,7 @@
 				A5DA0644258BF274006226F7 /* Main.storyboard in Resources */,
 				A5DA0656258BF622006226F7 /* BirdTileSet.sks in Resources */,
 				A5DA063B258BF274006226F7 /* GameScene.sks in Resources */,
+				A5DA065E258BFC41006226F7 /* Launch Screen.storyboard in Resources */,
 				A5DA0646258BF275006226F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
