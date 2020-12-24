@@ -50,6 +50,25 @@ class GameScene: SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if bird.grabbed {
             bird.grabbed = false
+            bird.flying = true
+            constrainToAnchor(active: false)
+            let dx = anchor.position.x - bird.position.x
+            let dy = anchor.position.y - bird.position.y
+            let impulse = CGVector(dx: dx, dy: dy)
+            bird.physicsBody?.applyImpulse(impulse)
+            bird.isUserInteractionEnabled = false
+        }
+    }
+    
+    // Bird is only draggable around its anchor point
+    func constrainToAnchor(active: Bool) {
+        if active {
+            let slingRange = SKRange(lowerLimit: 0.0, upperLimit: bird.size.width * 3)
+            let positionConstraint = SKConstraint.distance(slingRange, to: anchor)
+            bird.constraints = [positionConstraint]
+        }
+        else {
+            bird.constraints?.removeAll()
         }
     }
     
@@ -87,8 +106,16 @@ class GameScene: SKScene {
     }
     
     func addBird() {
+        bird.physicsBody = SKPhysicsBody(rectangleOf: bird.size)
+        bird.physicsBody?.categoryBitMask = PhysicsCategory.bird
+        bird.physicsBody?.contactTestBitMask = PhysicsCategory.all
+        // Bird cant fly off the screen
+        bird.physicsBody?.collisionBitMask = PhysicsCategory.block | PhysicsCategory.edge
+        // Bird wont just drop when the screen is loaded
+        bird.physicsBody?.isDynamic = false
         bird.position = anchor.position
         addChild(bird)
+        constrainToAnchor(active: true)
     }
     
 }

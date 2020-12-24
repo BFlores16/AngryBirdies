@@ -13,7 +13,14 @@ enum BirdType: String {
 
 class Bird: SKSpriteNode {
     let birdType: BirdType
-    var grabbed = false
+    var grabbed = false     // if our bird is being moved
+    var flying = false {    // if our bird has been launched
+        didSet {
+            if flying {
+                physicsBody?.isDynamic = true
+            }
+        }
+    }
     
     init(type: BirdType) {
         birdType = type
