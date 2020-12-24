@@ -28,7 +28,16 @@ class GameCamera: SKCameraNode {
         
         let levelEdgeContraint = SKConstraint.positionX(xRange, y: yRange)
         
-        constraints = [levelEdgeContraint]
+        // The camera will follow the bird
+        if let passedNode = node {
+            let zeroRange = SKRange(constantValue: 0.0)
+            let positionConstraint = SKConstraint.distance(zeroRange, to: passedNode)
+            constraints = [positionConstraint , levelEdgeContraint]
+        }
+        else {
+            constraints = [levelEdgeContraint]
+        }
+
     }
     
 }
