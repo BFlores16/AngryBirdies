@@ -10,6 +10,7 @@
 		A5BFF0EE258C026500FC5294 /* GameCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFF0ED258C026500FC5294 /* GameCamera.swift */; };
 		A5BFF0F7258C183200FC5294 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFF0F6258C183200FC5294 /* Configuration.swift */; };
 		A5BFF0FA258C1B1D00FC5294 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFF0F9258C1B1D00FC5294 /* Bird.swift */; };
+		A5BFF1002596FF0A00FC5294 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFF0FF2596FF0A00FC5294 /* Block.swift */; };
 		A5DA0639258BF274006226F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA0638258BF274006226F7 /* AppDelegate.swift */; };
 		A5DA063B258BF274006226F7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5DA063A258BF274006226F7 /* GameScene.sks */; };
 		A5DA063F258BF274006226F7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA063E258BF274006226F7 /* GameScene.swift */; };
@@ -24,6 +25,7 @@
 		A5BFF0ED258C026500FC5294 /* GameCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCamera.swift; sourceTree = "<group>"; };
 		A5BFF0F6258C183200FC5294 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A5BFF0F9258C1B1D00FC5294 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		A5BFF0FF2596FF0A00FC5294 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		A5DA0635258BF274006226F7 /* AngryBirdies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirdies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DA0638258BF274006226F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5DA063A258BF274006226F7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				A5BFF0ED258C026500FC5294 /* GameCamera.swift */,
 				A5BFF0F9258C1B1D00FC5294 /* Bird.swift */,
+				A5BFF0FF2596FF0A00FC5294 /* Block.swift */,
 			);
 			path = "Custom Nodes";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DA063F258BF274006226F7 /* GameScene.swift in Sources */,
+				A5BFF1002596FF0A00FC5294 /* Block.swift in Sources */,
 				A5BFF0F7258C183200FC5294 /* Configuration.swift in Sources */,
 				A5DA0641258BF274006226F7 /* GameViewController.swift in Sources */,
 				A5BFF0EE258C026500FC5294 /* GameCamera.swift in Sources */,
