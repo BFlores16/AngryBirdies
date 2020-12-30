@@ -44,4 +44,19 @@ class Block: SKSpriteNode {
         physicsBody?.contactTestBitMask = PhysicsCategory.all
         physicsBody?.collisionBitMask = PhysicsCategory.all
     }
+    
+    /*
+     Measure the amount of damage done to the block when it is hit
+     */
+    func impact(with force: Int) {
+        health -= force
+        // Block has been destroyed
+        if health < 1 {
+            removeFromParent()
+        }
+        else if health < damageThreshold {
+            color = UIColor.red
+        }
+    }
+    
 }
